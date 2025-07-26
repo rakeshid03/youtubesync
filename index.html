@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Gun + YouTube API -->
+  <script src="https://cdn.jsdelivr.net/npm/gun/gun.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <header>🔀 YouTube Sync</header>
+  <div id="player"></div>
+  
+  <form onsubmit="event.preventDefault(); loadVideo();">
+    <label for="youtubeInput">YouTube Video URL or ID</label>
+    <input type="text" id="youtubeInput" placeholder="Paste a YouTube URL or video ID">
+    <button type="submit">Play</button>
+  </form>
+  
+  <!--Contact me-->
+  <div class="contact">
+    <a href="https://rakeshid03.github.io/about-me/" target="_self">Built by RC with Gun.js</a>
+  </div>
+  
+  <script src="script.js"></script>
+</html>
